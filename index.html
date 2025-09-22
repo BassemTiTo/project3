@@ -1,0 +1,1803 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>coffe shop</title>
+
+<link rel="stylesheet" href="CSS-bootstrap/bootstrap.min.css">
+
+<link rel="stylesheet" href="CSS/all.css">
+
+<link rel="stylesheet" href="CSS/StyleeSheet.css">
+
+</head>
+
+
+<body>
+
+<header>
+
+<nav class="navbar navbar-expand-lg navbar-dark py-0 fixed-top">
+
+  <div class="container d-flex align-items-center justify-content-between">
+
+    <a href="#" class="d-flex align-items-center flex-nowrap text-decoration-none pe-1 ">
+
+      <img src="Images/logo3.png" width="58" height="58" class="rounded-circle me-2">
+
+      <span class="fw-bold fs-4 title text-nowrap">Coffee Shop</span>
+
+        <div class="d-none d-lg-block border-end ms-3" style="height:50px;"></div>
+        
+    </a> <!-- a  -->
+
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+
+      <span class="navbar-toggler-icon"></span>
+
+    </button> <!-- navbar-toggler  -->
+
+    
+    <div class="collapse navbar-collapse" id="mynavbar">
+
+      <ul class="navbar-nav me-auto mb-2 ms-lg-2 mb-lg-0">
+
+        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+
+        <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+
+
+        <li class="nav-item dropdown">
+
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Menu</a>
+
+          <ul class="dropdown-menu pt-1">
+
+            <li><a class="dropdown-item" href="#">Coffee</a></li>
+
+            <li><a class="dropdown-item" href="#">Tea</a></li>
+
+            <hr class="my-1" style="color: aliceblue;">
+
+            <li><a class="dropdown-item" href="#">Pastries</a></li>
+
+            <li><a class="dropdown-item" href="#">Sperous</a></li>
+
+            <li><a class="dropdown-item" href="#">Cappuccino</a></li>
+
+          </ul> <!-- dropdown-menu -->
+
+        </li> <!-- nav-item dropdown -->
+
+        <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
+
+      </ul>
+
+      <form class="d-flex mt-2 mt-lg-0">
+
+        <input type="text" class="form-control me-2" placeholder="Search">
+
+        <button class="btn btn-outline-success me-2">Search</button>
+
+        <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+
+      </form> <!-- form -->
+
+    </div> <!-- collapse navbar-collapse -->
+
+  </div> <!--container  -->
+
+</nav> <!-- nav -->
+
+<div class="modal fade" id="loginModal" tabindex="-1" aria-hidden="true">
+
+    <div class="modal-dialog mt-5">
+
+      <div class="modal-content">
+
+        <div class="modal-header">
+
+          <h5 class="modal-title">login</h5>
+
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+        </div> <!-- modal-header -->
+
+        <div class="modal-body">
+
+          <form id="loginForm">
+
+            <div class="mb-3 woo">
+
+              <label for="email" class="form-label">Email Address</label>
+
+              <input type="text" class="form-control" id="email" placeholder="Enter your email">
+
+            </div> <!-- mb-3 woo  -->
+
+            <div class="mb-3 pop">
+
+              <label for="password" class="form-label">Password</label>
+
+              <input type="password" class="form-control" id="password" placeholder="••••••••">
+
+            </div> <!-- mb-3 pop -->
+
+          </form> <!-- loginForm -->
+
+         <div class="form-check mt-3">
+
+        <input class="form-check-input big-check" type="checkbox" id="remember">
+
+        <label class="form-check-label" for="remember"> Remember me</label>
+
+         </div> <!-- form-check mt-3 -->
+
+        </div> <!-- modal-body -->
+
+       <button type="button" form="loginForm" class="btn-1 fs-4 me-4 ms-4 mb-4 pb-1 rounded" data-bs-dismiss="modal">Login</button>
+
+      </div> <!-- modal-content -->
+
+    </div> <!-- modal-dialog -->
+
+  </div> <!-- modal fade -->
+
+
+</header> <!-- *********************************************************************************header***************************************************************-->
+
+
+
+<main>
+
+
+<div id="carouselExampleDark" class="carousel carousel-light slide" data-bs-ride="carousel">
+
+ 
+  <div class="carousel-indicators">
+    
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
+
+  </div> <!-- carousel-indicators -->
+
+
+  <div class="carousel-inner">
+
+
+    <div class="carousel-item active" data-bs-interval="5000">
+
+      <img src="Images/pic33.png" class="d-block w-100" alt="Coffee Black">
+
+      <div class="carousel-caption d-md-block product-box border rounded p-1 text-center bottom-0 mb-3">
+
+        <h5>Coffe-Black</h5>
+
+        <p>A premium blend of carefully roasted ☕ coffee beans</p>
+
+        <div class="inner-border">Call us</div>
+
+      </div> <!-- carousel-caption -->
+
+    </div> <!-- carousel-item -->
+
+
+    <div class="carousel-item" data-bs-interval="5000">
+
+      <img src="Images/pic17.png" class="d-block w-100" alt="Cappuccino">
+
+ <div class="carousel-caption d-md-block product-box border rounded p-0 text-center bottom-0 mb-3">
+
+        <h5>Cappuccino</h5>
+
+        <p>A premium blend of carefully roasted ☕ coffee beans</p>
+
+        <div class="inner-border">Call us</div>
+
+      </div> <!-- carousel-caption -->
+
+    </div> <!-- carousel-item -->
+
+    <div class="carousel-item">
+
+      <img src="Images/pic9.jpg" class="d-block w-100" alt="Americano">
+
+ <div class="carousel-caption d-md-block product-box border rounded p-1 text-center bottom-0 mb-3">
+        <h5>Coffe-Americano</h5>
+
+        <p>A premium blend of carefully roasted ☕ coffee beans</p>
+
+        <div class="inner-border">Call us</div>
+
+      </div> <!-- carousel-caption -->
+
+    </div>  <!-- carousel-item -->
+
+   
+    <div class="carousel-item">
+
+      <img src="Images/pic7.jpg" class="d-block w-100" alt="Latte">
+
+ <div class="carousel-caption d-md-block product-box border rounded p-1 text-center bottom-0 mb-3">
+
+        <h5>Coffe-Latte</h5>
+
+        <p>A premium blend of carefully roasted ☕ coffee beans</p>
+
+        <div class="inner-border">Call us</div>
+
+      </div> <!-- carousel-caption -->
+
+    </div>  <!-- carousel-item -->
+
+  </div> <!-- carousel-inner -->
+
+  <button class="carousel-control-prev  d-none d-md-block" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+
+    <span class="visually-hidden">Previous</span>
+
+  </button> <!-- carousel-control-prev -->
+
+  <button class="carousel-control-next d-none d-md-block" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+
+    <span class="visually-hidden">Next</span>
+
+  </button> <!-- carousel-control-Next -->
+
+
+<div class="carousel-icons-next d-flex flex-column align-items-center position-fixed end-0 mt-sm-1">
+
+    <i class="fa-brands fa-facebook icon-item"></i>
+
+    <i class="fa-brands fa-twitter icon-item"></i>
+
+    <i class="fa-brands fa-instagram icon-item"></i>
+
+    <i class="fa-brands fa-whatsapp icon-item"></i>
+
+    <i class="fa-brands fa-linkedin-in icon-item"></i>
+
+  </div> <!-- carousel-icons-next  -->
+
+</div> <!-- carousel-indicators -->
+
+
+</main> <!--*********************************************************************main********************************************************** -->
+
+
+
+<section>
+
+
+
+<div class="p-4 bg color-bg">
+
+  <h2 class="mb-2 title-section1">Welcome</h2>
+  
+ 
+  <p class="mb-3 p-setcion1">   Welcome to our shop - Discover the authentic taste of coffee at our shop, where we select the finest beans 
+    and brew them with care to offer a unique experience for coffee lovers. 
+    Enjoy a warm and cozy atmosphere with every cup.</p>
+  
+  
+  <button class="btn btn-section1">Learn More</button>
+
+</div> <!-- color-bg -->
+
+
+</section> <!--**********************************************************************section-1********************************************************** -->
+
+
+<hr style="color: #3E2723;">
+
+
+
+<section class="section-2 d-flex align-items-center border rounded">
+
+  <div class="container text-center">
+
+    <h1 class="fw-bold text-color fs-2 m-0"> The Most Famous cups of coffee In Our shops</h1>
+
+  </div> <!-- container text-center  -->
+
+
+</section> <!--**********************************************************************section-2********************************************************** -->
+
+
+<br>
+
+
+<section>
+
+<div class="accordion rounded" id="accordionExample">
+
+  <div class="accordion-item rounded">
+
+    <h2 class="accordion-header" id="headingOne">
+
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+
+        Espresso Coffee.
+
+      </button> <!-- accordion-button  -->
+
+    </h2> <!-- accordion-header -->
+
+    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+
+      <div class="accordion-body">
+
+        <strong> Espresso Coffee celebrates</strong> the art of fine roasting and the joy of a perfectly brewed cup.
+
+    We source premium beans from select farms and roast them in small batches to deliver a smooth, balanced taste with a rich aroma.<code></code>
+
+      </div> <!-- accordion-body -->
+
+    </div> <!-- collapseOne -->
+
+  </div> <!-- accordion-item -->
+
+  <div class="accordion-item">
+
+    <h2 class="accordion-header" id="headingTwo">
+
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+
+       Latte Coffee.
+
+      </button> <!-- accordion-button  -->
+
+    </h2> <!-- accordion-header -->
+
+    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+
+      <div class="accordion-body">
+
+        <strong>Latte coffee</strong> is a classic Italian beverage made with one or more shots of espresso blended with a generous amount of steamed milk and a light layer of milk foam on top. It has a smooth, creamy texture and a mild coffee flavor<code></code>
+
+      </div> <!-- accordion-body -->
+
+    </div> <!-- collapseTwo -->
+
+  </div> <!-- accordion-item -->
+
+  <div class="accordion-item">
+
+    <h2 class="accordion-header" id="headingThree">
+
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+
+        Cappuccino Coffee.
+
+     </button> <!-- accordion-button  -->
+
+    </h2> <!-- accordion-header -->
+
+    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+
+      <div class="accordion-body">
+
+        <strong>Cappuccino</strong> is a classic Italian coffee drink made with a strong shot of espresso, an equal amount of steamed milk, and a thick layer of milk foam. It offers a rich, balanced flavor that combines the boldness of coffee with the smoothness of milk.<code></code>
+
+        </div> <!-- accordion-body -->
+
+    </div> <!-- collapseThree -->
+
+  </div> <!-- accordion-item -->
+
+</div> <!-- accordion rounded -->
+
+
+</section> <!--**********************************************************************************section-3********************************************************** -->
+
+
+
+<hr style="color: #3E2723;">
+
+
+
+<section>
+
+<div class="bg color-bg text-center fs-2 Translate rounded-top p-3">
+
+  Translate From Arabic To English
+
+</div> <!--Translate -->
+
+
+<div class="p-3 back-height rounded-bottom m-0 fs-4 fun">
+
+Write And Translate <span style="color: #3E2723;">Press Here</span>
+
+<br>
+
+  <div> 
+
+  <button id="copyBtn" type="button" class="btn  copyBtn mt-2 pe-4 ps-4" data-bs-toggle="modal" data-bs-target="#copyModal">
+
+    Copy
+    
+  </button>
+
+  
+  
+   <div id="copiedText" class="fw-bold fs-5 copiedText ms-2 rounded p-1" style="display:none ; position: relative; top: 8px; color:#fff8f0; background-color: #3E2723;">
+    Copied
+
+  </div> <!-- copiedText -->
+
+  <input type="text" class="form-control input-text mt-3 p-5 pc" placeholder="Translate:">
+
+</div> <!-- back-height -->
+
+<div class="modal fade" id="copyModal" tabindex="-1" aria-labelledby="copyModalLabel" aria-hidden="true">
+
+  <div class="modal-dialog modal-dialog-centered">
+
+    <div class="modal-content text-center">
+      
+      <!-- Header: علامة × -->
+
+      <div class="modal-header">
+
+        <h5 class="modal-title" id="copyModalLabel" style="text-transform: capitalize;">Coffe Shop</h5>
+
+        <button type="button" id="btnClose" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+      </div> <!-- modal-header -->
+
+      <!-- Body: الرسالة -->
+
+      <div class="modal-body">
+  
+      <span id="copiedText" style="display: none;">Copied</span>
+
+    <p id="messageText" style="color: #3E2723; text-transform: capitalize;"> the message has Copied </p>
+
+      </div> <!-- modal-body -->
+
+
+      <!-- Footer: زر إغلاق -->
+
+      <div class="modal-footer justify-content-center" style="border: none">
+
+        <button id="closeModalBtn" type="button" class="btn btn-bom ms-1" data-bs-dismiss="modal">OK</button>
+
+      </div> <!-- modal-footer -->
+
+    </div> <!-- modal-content text-center -->
+
+  </div> <!-- modal-dialog -->
+
+</div> <!-- "modal fade -->
+
+
+
+
+<script> 
+
+var copyBtn = document.getElementById("copyBtn");
+
+var copiedText = document.getElementById("copiedText")
+
+var closeModalBtn = document.getElementById("closeModalBtn")
+
+var btnclose = document.getElementById("btnClose")
+
+copyBtn.onclick=function(){
+copiedText.style.display="inline"
+
+}
+
+closeModalBtn.onclick=function(){
+copiedText.style.display="none"
+
+}
+
+ btnclose.onclick=function(){
+
+ copiedText.style.display="none"
+}
+
+</script> <!-- script -->
+
+
+</section> <!--**********************************************************************************section-4********************************************************** -->
+
+
+
+
+
+
+<hr style="color: #3E2723;">
+
+
+
+<section>
+
+<div class="bg color-bg text-center fs-2 Translate rounded-top p-3">
+
+  Translate From Arabic To German
+
+</div> <!--Translate -->
+
+
+<div class="p-3 back-height rounded-bottom m-0 fs-4 fun">
+
+Write And Translate <span style="color: #3E2723;">Press Here</span>
+
+<br>
+
+  <div> 
+
+  <button id="myCopyBtn1" type="button" class="btn  copyBtn mt-2 pe-4 ps-4" data-bs-toggle="modal" data-bs-target="#copyModal2">
+
+    Copy
+    
+  </button>
+
+  
+  
+   <div id="myCopiedText1" class="fw-bold fs-5 copiedText ms-2 rounded p-1" style="display:none ; position: relative; top: 8px; color:#fff8f0; background-color: #3E2723;">
+    Copied
+
+  </div> <!-- copiedText -->
+
+  <input type="text" class="form-control input-text mt-3 p-5 pc" placeholder="Translate:">
+
+</div> <!-- back-height -->
+
+<div class="modal fade" id="copyModal2" tabindex="-1" aria-labelledby="copyModalLabel" aria-hidden="true">
+
+  <div class="modal-dialog modal-dialog-centered">
+
+    <div class="modal-content text-center">
+      
+      <!-- Header: علامة × -->
+
+      <div class="modal-header">
+
+        <h5 class="modal-title" id="copyModalLabel" style="text-transform: capitalize;">Coffe Shop</h5>
+
+        <button type="button" id="btnClose1" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+      </div> <!-- modal-header -->
+
+      <!-- Body: الرسالة -->
+
+      <div class="modal-body">
+  
+      <span id="myCopiedText1" style="display: none;">Copied</span>
+
+    <p id="messageText" style="color: #3E2723; text-transform: capitalize;"> the message has Copied </p>
+
+      </div> <!-- modal-body -->
+
+
+      <!-- Footer: زر إغلاق -->
+
+      <div class="modal-footer justify-content-center" style="border: none">
+
+        <button id="myModal1" type="button" class="btn btn-bom ms-1" data-bs-dismiss="modal">OK</button>
+
+      </div> <!-- modal-footer -->
+
+    </div> <!-- modal-content text-center -->
+
+  </div> <!-- modal-dialog -->
+
+</div> <!-- "modal fade -->
+
+
+
+
+<script> 
+
+var copyBtn1 = document.getElementById("myCopyBtn1");
+
+var copiedText1 = document.getElementById("myCopiedText1")
+
+var closeModalBtn1 = document.getElementById("myModal1")
+
+var btnclose1 = document.getElementById("btnClose1")
+
+copyBtn1.onclick=function(){
+copiedText1.style.display="inline"
+
+}
+
+closeModalBtn1.onclick=function(){
+copiedText1.style.display="none"
+
+}
+
+ btnclose1.onclick=function(){
+
+ copiedText1.style.display="none"
+}
+
+</script> <!-- script -->
+
+
+</section> <!--**********************************************************************************section-5********************************************************** -->
+
+
+
+
+
+
+<hr style="color: #3E2723;">
+
+
+
+<section>
+
+<div class="bg color-bg text-center fs-2 Translate rounded-top p-3">
+
+  Translate From Arabic To French
+
+</div> <!--Translate -->
+
+
+<div class="p-3 back-height rounded-bottom m-0 fs-4 fun">
+
+Write And Translate <span style="color: #3E2723;">Press Here</span>
+
+<br>
+
+  <div> 
+
+  <button id="myCopyBtn2" type="button" class="btn  copyBtn mt-2 pe-4 ps-4" data-bs-toggle="modal" data-bs-target="#copyModal3">
+
+    Copy
+    
+  </button>
+
+  
+  
+   <div id="myCopiedText2" class="fw-bold fs-5 copiedText ms-2 rounded p-1" style="display:none ; position: relative; top: 8px; color:#fff8f0; background-color: #3E2723;">
+    Copied
+
+  </div> <!-- copiedText -->
+
+  <input type="text" class="form-control input-text mt-3 p-5 pc" placeholder="Translate:">
+
+</div> <!-- back-height -->
+
+<div class="modal fade" id="copyModal3" tabindex="-1" aria-labelledby="copyModalLabel" aria-hidden="true">
+
+  <div class="modal-dialog modal-dialog-centered">
+
+    <div class="modal-content text-center">
+      
+      <!-- Header: علامة × -->
+
+      <div class="modal-header">
+
+        <h5 class="modal-title" id="copyModalLabel" style="text-transform: capitalize;">Coffe Shop</h5>
+
+        <button type="button" id="btnClose2" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+      </div> <!-- modal-header -->
+
+      <!-- Body: الرسالة -->
+
+      <div class="modal-body">
+  
+      <span id="myCopiedText2" style="display: none;">Copied</span>
+
+    <p id="messageText" style="color: #3E2723; text-transform: capitalize;"> the message has Copied </p>
+
+      </div> <!-- modal-body -->
+
+
+      <!-- Footer: زر إغلاق -->
+
+      <div class="modal-footer justify-content-center" style="border: none">
+
+        <button id="myModal2" type="button" class="btn btn-bom ms-1" data-bs-dismiss="modal">OK</button>
+
+      </div> <!-- modal-footer -->
+
+    </div> <!-- modal-content text-center -->
+
+  </div> <!-- modal-dialog -->
+
+</div> <!-- "modal fade -->
+
+
+
+
+<script> 
+
+var copyBtn2 = document.getElementById("myCopyBtn2");
+
+var copiedText2 = document.getElementById("myCopiedText2")
+
+var closeModalBtn2 = document.getElementById("myModal2")
+
+var btnclose2 = document.getElementById("btnClose2")
+
+copyBtn2.onclick=function(){
+copiedText2.style.display="inline"
+
+}
+
+closeModalBtn2.onclick=function(){
+copiedText2.style.display="none"
+
+}
+
+ btnclose2.onclick=function(){
+
+ copiedText2.style.display="none"
+}
+
+</script> <!-- script -->
+
+
+</section> <!--**********************************************************************************section-6********************************************************** -->
+
+
+
+<hr style="color: #3E2723;">
+
+
+
+
+<section class="hero-section">
+        
+
+</section> <!--**********************************************************************************section-7********************************************************** -->
+
+
+
+
+<section>
+
+<div class="bg color-bg text-center fs-2 Translate rounded-top p-3 mt-5 fw-bold mb-4">
+
+ .. popular cups coffe in our shop ..
+
+</div> <!--Translate -->
+
+  <div class="container">
+
+  <div class="row g-3 justify-content-center">
+
+<div class="col-lg-4 col-md-6 col-12 mb-4">
+
+
+<div class="card mt-4 ms-1 position-relative" style="width:19rem;">
+
+   
+  <img src="Images/pic15.jpg"
+
+       class="d-block mx-auto pt-2"
+
+       style="width:90%; height:250px; object-fit:cover; margin-top: -8px; border-top-right-radius: 12px; border-top-left-radius: 12px;"
+
+       alt="Pizza">
+
+
+  <div class="card-body text-center">
+
+    <h5 class="card-title text-uppercase text-start fw-bold">Black-Coffe<span style="color: #3E2723;">.</span></h5>
+
+
+
+<div class="text-end">
+
+  <a href="#" class="btn ps-3 pe-3 me-3 show-bttom">
+
+    SHOW
+
+  </a>
+
+</div> <!-- text-end -->
+
+</div> <!-- card-body -->
+
+
+<p class="card-text ms-2 mb-3" style="font-size:1.0rem;">
+
+ Black coffee has a strong and bold flavor , can boost your energy instantly.
+
+    </p>
+    
+  </div> <!-- card -->
+
+</div> <!-- col-lg-4 col-md-6 col-sm-12 mb-4 -->
+
+
+
+
+
+<div class="col-lg-4 col-md-6 col-12 mb-4">
+
+
+<div class="card mt-4 ms-1  position-relative" style="width:19rem;">
+
+   
+  <img src="Images/pic13.jpg"
+
+       class="d-block mx-auto pt-2"
+
+       style="width:90%; height:250px; object-fit:cover; margin-top: -8px; border-top-right-radius: 12px; border-top-left-radius: 12px;"
+
+       alt="Pizza">
+
+
+  <div class="card-body text-center">
+
+    <h5 class="card-title text-uppercase text-start fw-bold">milk-coffe<span style="color: #3E2723;">.</span></h5>
+
+
+
+<div class="text-end">
+
+  <a href="#" class="btn ps-3 pe-3 me-3 show-bttom">
+
+    SHOW
+
+  </a>
+
+</div> <!-- text-end -->
+
+</div> <!-- card-body -->
+
+
+<p class="card-text ms-2 mb-3" style="font-size:1.0rem;">
+
+milk-coffe has a strong and bold flavor , can boost your energy instantly.
+
+    </p>
+    
+  </div> <!-- card -->
+
+</div> <!-- col-lg-4 col-md-6 col-sm-12 mb-4 -->
+
+
+
+<div class="col-lg-4 col-md-6 col-12 mb-4">
+
+
+<div class="card mt-4 ms-1 position-relative" style="width:19rem;">
+
+   
+  <img src="Images/pic4.jpg"
+
+       class="d-block mx-auto  pt-2"
+
+       style="width:90%; height:250px; object-fit:cover; margin-top: -8px; border-top-right-radius: 12px; border-top-left-radius: 12px;"
+
+       alt="Pizza">
+
+
+  <div class="card-body text-center">
+
+    <h5 class="card-title text-uppercase text-start fw-bold">Cortado-coffe<span style="color: #3E2723;">.</span></h5>
+
+
+
+<div class="text-end">
+
+  <a href="#" class="btn ps-3 pe-3 me-3 show-bttom">
+
+    SHOW
+
+  </a>
+
+</div> <!-- text-end -->
+
+</div> <!-- card-body -->
+
+
+<p class="card-text ms-2 mb-3" style="font-size:1.0rem;">
+
+Cortado coffee  has a strong and bold flavor , can boost your energy instantly.
+
+    </p>
+    
+  </div> <!-- card -->
+
+</div> <!-- col-lg-4 col-md-6 col-sm-12 mb-4 -->
+
+
+
+
+
+<div class="col-lg-4 col-md-6 col-12 mb-4">
+
+<div class="card mt-4 ms-1 position-relative" style="width:19rem;">
+
+   
+  <img src="Images/pic6.jpg"
+
+       class="d-block mx-auto pt-2"
+
+       style="width:90%; height:250px; object-fit:cover; margin-top: -8px; border-top-right-radius: 12px; border-top-left-radius: 12px;"
+
+       alt="Pizza">
+
+
+  <div class="card-body text-center">
+
+    <h5 class="card-title text-uppercase text-start fw-bold">Iced-Coffee<span style="color: #3E2723;">.</span></h5>
+
+
+
+<div class="text-end">
+
+  <a href="#" class="btn ps-3 pe-3 me-3 show-bttom">
+
+    SHOW
+
+  </a>
+
+</div> <!-- text-end -->
+
+</div> <!-- card-body -->
+
+
+<p class="card-text ms-2 mb-3" style="font-size:1.0rem;">
+
+Iced Coffee has a strong and bold flavor , can boost your energy instantly.
+
+    </p>
+    
+  </div> <!-- card -->
+
+</div> <!-- col-lg-4 col-md-6 col-sm-12 mb-4 -->
+
+
+
+
+
+
+<div class="col-lg-4 col-md-6 col-12 mb-4">
+
+<div class="card mt-4 ms-1 position-relative" style="width:19rem;">
+   
+  <img src="Images/pic32.jpg"
+
+       class="d-block mx-auto pt-2"
+
+       style="width:90%; height:250px; object-fit:cover; margin-top: -8px; border-top-right-radius: 12px; border-top-left-radius: 12px;"
+
+       alt="Pizza">
+
+
+  <div class="card-body text-center">
+
+    <h5 class="card-title text-uppercase text-start fw-bold ">latte-Coffee<span style="color: #3E2723;">.</span></h5>
+
+
+
+<div class="text-end">
+
+  <a href="#" class="btn ps-3 pe-3 me-3 show-bttom">
+
+    SHOW
+
+  </a>
+
+</div> <!-- text-end -->
+
+</div> <!-- card-body -->
+
+
+<p class="card-text ms-2 mb-3" style="font-size:1.0rem;">
+
+ Caramel Coffee has a strong and bold flavor , can boost your energy instantly.
+
+    </p>
+    
+  </div> <!-- card -->
+
+</div> <!-- col-lg-4 col-md-6 col-sm-12 mb-4 -->
+
+
+
+
+<div class="col-lg-4 col-md-6 col-12 mb-4">
+
+<div class="card mt-4 ms-1 position-relative" style="width:19rem;">
+
+   
+  <img src="Images/pic16.jpg"
+
+       class="d-block mx-auto  pt-2"
+
+       style="width:90%; height:250px; object-fit:cover; margin-top: -8px; border-top-right-radius: 12px; border-top-left-radius: 12px;"
+
+       alt="Pizza">
+
+
+  <div class="card-body text-center">
+
+    <h5 class="card-title text-uppercase text-start fw-bold">Cappuccino<span style="color: #3E2723;">.</span></h5>
+
+
+
+<div class="text-end">
+
+  <a href="#" class="btn ps-3 pe-3 me-3 show-bttom">
+
+    SHOW
+
+  </a>
+
+</div> <!-- text-end -->
+
+</div> <!-- card-body -->
+
+
+<p class="card-text ms-2 mb-3" style="font-size:1.0rem;">
+
+ Cappuccino has a strong and bold flavor , can boost your energy instantly.
+
+    </p>
+    
+  </div> <!-- card -->
+
+</div> <!-- col-lg-4 col-md-6 col-sm-12 mb-4 -->
+
+
+
+
+
+
+
+
+
+
+<div class="col-lg-4 col-md-6 col-12 mb-4">
+
+<div class="card mt-4 ms-1  position-relative" style="width:19rem;">
+
+   
+  <img src="Images/pic43.jpg"
+
+       class="d-block mx-auto pt-2"
+
+       style="width:90%; height:250px; object-fit:cover; margin-top: -8px; border-top-right-radius: 12px; border-top-left-radius: 12px;"
+
+       alt="Pizza">
+
+
+  <div class="card-body text-center">
+
+    <h5 class="card-title text-uppercase text-start fw-bold">Coffee-Beans<span style="color: #3E2723;">.</span></h5>
+
+
+
+<div class="text-end">
+
+  <a href="#" class="btn ps-3 pe-3 me-3 show-bttom">
+
+    SHOW
+
+  </a>
+
+</div> <!-- text-end -->
+
+</div> <!-- card-body -->
+
+
+<p class="card-text ms-2 mb-3" style="font-size:1.0rem;">
+
+ Coffee Beans has a strong and bold flavor , can boost your energy instantly.
+
+    </p>
+    
+  </div> <!-- card -->
+
+</div> <!-- col-lg-4 col-md-6 col-sm-12 mb-4 -->
+
+
+
+
+<div class="col-lg-4 col-md-6 col-12 mb-4">
+
+<div class="card mt-4 ms-1 position-relative" style="width:19rem;">
+
+   
+  <img src="Images/pic40.jpg"
+
+       class="d-block mx-auto  pt-2"
+
+       style="width:90%; height:250px; object-fit:cover; margin-top: -8px; border-top-right-radius: 12px; border-top-left-radius: 12px;"
+
+       alt="Pizza">
+
+
+  <div class="card-body text-center">
+
+    <h5 class="card-title text-uppercase text-start fw-bold">Coffee-Mocha<span style="color: #3E2723;">.</span></h5>
+
+
+
+<div class="text-end">
+
+  <a href="#" class="btn ps-3 pe-3 me-3 show-bttom">
+
+    SHOW
+
+  </a>
+
+</div> <!-- text-end -->
+
+</div> <!-- card-body -->
+
+
+<p class="card-text ms-2 mb-3" style="font-size:1.0rem;">
+
+Coffee Mocha has a strong and bold flavor , can boost your energy instantly.
+
+    </p>
+    
+  </div> <!-- card -->
+
+</div> <!-- col-lg-4 col-md-6 col-sm-12 mb-4 -->
+
+</div> <!-- row -->
+
+</div> <!-- container -->
+
+
+</section> <!--**********************************************************************************section-8********************************************************** -->
+
+
+<br>
+
+
+<section class="bero-section">
+        
+
+</section> <!--**********************************************************************************section-9********************************************************** -->
+
+
+<section>
+
+<div class="bg color-bg text-center fs-2 Translate rounded-top p-3 mt-4 mb-5 fw-bold">
+
+ .. Thanks For ..
+
+</div> <!--Translate -->
+
+  <div class="container container-section10">
+
+    <div class="row justify-content-center g-4">
+
+
+
+<div class="col-md-4 col-sm-6 col-lg-3 d-flex justify-content-center">
+
+        <div class="card thanks-card text-white border-0 rounded-4 overflow-hidden">
+          
+          <img src="Images/pic494.jpg" class="card-img thanks-img" alt="">
+
+    <div class="card-img-overlay thanks-overlay d-flex flex-column justify-content-end px-2 py-4">
+
+            <p class="small">All Thanks And Appreciation<br>⏰CJoune 22. 2025</i></p> 
+
+            
+
+            <div class="d-flex align-items-center mt-3 ms-n5">
+
+              <img src="Images/pic494.jpg" class=" thanks-avatar" alt="">
+
+              <div> 
+
+                <h6 class="mb-0 fw-0 ps-2 pt-1 title-h6">Eng.sami heady web develper</h6>
+
+              
+              </div> <!--title-h6 -->
+
+            </div> <!-- d-flex align-items-center mt-3 ms-n5 -->
+
+          </div> <!--  card-img-overlay -->
+
+        </div> <!-- card thanks-card -->
+
+      </div> <!-- col-md-4 col-sm-6 col-lg-3 d-flex justify-content-center -->
+
+
+
+
+
+ <div class="col-md-4 col-sm-6 col-lg-3 d-flex justify-content-center">
+
+        <div class="card thanks-card text-white border-0 rounded-4 overflow-hidden">
+          
+          <img src="Images/pic47.png" class="card-img thanks-img" alt="">
+
+    <div class="card-img-overlay thanks-overlay d-flex flex-column justify-content-end px-2 py-4">
+
+            <p class="small">All Thanks And Appreciation
+<br>⏰CJoune 22. 2025</i></p>
+
+            
+
+            <div class="d-flex align-items-center mt-3 ms-n5">
+
+              <img src="Images/pic47.png" class=" thanks-avatar" alt="">
+
+              <div>
+
+                <h6 class="mb-0 fw-0 ps-2 pt-1 title-h6">Eng.Bassem Ali Content Creator</h6>
+
+              
+                </div> <!--title-h6 -->
+
+            </div> <!-- d-flex align-items-center mt-3 ms-n5 -->
+
+          </div> <!--  card-img-overlay -->
+
+        </div> <!-- card thanks-card -->
+        
+      </div> <!-- col-md-4 col-sm-6 col-lg-3 d-flex justify-content-center -->
+
+
+
+
+
+
+
+ <div class="col-md-4 col-sm-6 col-lg-3 d-flex justify-content-center">
+
+        <div class="card thanks-card text-white border-0 rounded-4 overflow-hidden">
+          
+          <img src="Images/pic52.png" class="card-img thanks-img" alt="">
+
+    <div class="card-img-overlay thanks-overlay d-flex flex-column justify-content-end px-2 py-4">
+
+            <p class="small">All Thanks And Appreciation
+<br>⏰CJoune 22. 2025</i></p>
+
+            
+
+            <div class="d-flex align-items-center mt-3 ms-n5">
+
+              <img src="Images/pic52.png" class=" thanks-avatar" alt="">
+
+              <div>
+
+                <h6 class="mb-0 fw-0 ps-2 pt-1 title-h6">Eng.Ahmed Ali Director UL /UX </h6>
+
+              
+             </div> <!--title-h6 -->
+
+            </div> <!-- d-flex align-items-center mt-3 ms-n5 -->
+
+          </div> <!--  card-img-overlay -->
+
+        </div> <!-- card thanks-card -->
+        
+      </div> <!-- col-md-4 col-sm-6 col-lg-3 d-flex justify-content-center -->
+
+    </div> <!-- row -->
+
+  </div> <!-- container -->
+ 
+
+
+</section> <!--**********************************************************************************section-10********************************************************** -->
+
+
+<br> <br>
+
+<section>
+
+<div class="bg color-bg text-center fs-2 Translate rounded-top p-3 mt-4 mb-5 fw-bold">
+
+  ..coffe shop news..
+
+</div> <!-- Translate -->
+
+<div class="container">
+
+  <div class="card">
+
+  <div class="row g-0 flex-column flex-md-row">
+
+
+      <div class="col-12 col-md-5 order-md-last">
+
+        <div class="trapezoid-img">
+
+          <img src="images/pic56.jpg" alt="Pizza" class="we">
+
+        </div> <!-- trapezoid-img -->
+
+      </div> <!-- col-12 col-md-5 order-md-last -->
+
+      <!-- النص -->
+
+      <div class="col-12 col-md-7">
+
+        <div class="card-body ms-2">
+
+          <h5 class="card-title fst-italic fs-2">Podcast Title</h5>
+
+          <p class="card-m-0" style="color: #3E2723;">Mon, May 25th 2020</p>
+
+          <div class="progress ms-2 my-2">
+
+            <div class="progress-bar bg-warning animate-bar">
+
+            </div> <!-- animate-bar -->
+
+          </div> <!-- progress ms-2 my-2 -->
+
+          <p class="card-text">
+
+           our Coffee is more than just a beverage; it is a daily ritual for millions of people around the world. Its rich aroma and bold flavor awaken the senses and provide a moment of comfort and focus. From the delicate espresso shots of Italy to the creamy cappuccinos enjoyed in cafés worldwide, coffee brings people together, inspires creativity, and adds warmth to everyday. 
+
+            </p>
+
+         <div class=" pt-3 buttons-row">
+
+  <button class="btn btn-section11">
+
+    <i class="fas fa-microphone pe-1"></i>Podcast
+
+  </button> <!-- btn btn-section11 -->
+
+  <button class="btn btn-section11">
+
+    <i class="far fa-clock pe-1"></i>43 mins
+
+  </button> <!-- btn btn-section11 -->
+
+  <button class="btn btn-section11">
+
+    <i class="fas fa-play pe-1"></i>Play Episode
+
+  </button> <!-- btn btn-section11 -->
+
+        </div> <!-- pt-3 mb-0 buttons-row -->
+
+        </div>  <!-- card-body ms-2 -->
+
+      </div> <!-- col-12 col-md-7 -->
+
+    </div> <!-- row g-0 flex-column flex-md-row -->
+
+  </div> <!-- card -->
+
+
+
+
+
+
+  
+
+
+ <div class="card mt-5">
+
+  <div class="row g-0 flex-column flex-md-row">
+
+
+      <div class="col-12 col-md-5">
+
+        <div class="trapezoid-img rect">
+
+          <img src="images/pic58.png" alt="Pizza" class="we">
+
+        </div> <!-- trapezoid-img -->
+
+      </div> <!-- col-12 col-md-5 order-md-last -->
+
+      <!-- النص -->
+
+      <div class="col-12 col-md-7">
+
+        <div class="card-body boo">
+
+          <h5 class="card-title fst-italic fs-2">Podcast Title</h5>
+
+          <p class="card-m-0" style="color: #3E2723;">Mon, May 25th 2020</p>
+
+          <div class="progress ms- my-2">
+
+            <div class="progress-bar bg-warning animate-bar">
+
+            </div> <!-- animate-bar -->
+
+          </div> <!-- progress ms-2 my-2 -->
+
+          <p class="card-text">
+
+           our Coffee is more than just a beverage; it is a daily ritual for millions of people around the world. Its rich aroma and bold flavor awaken the senses and provide a moment of comfort and focus. From the delicate espresso shots of Italy to the creamy cappuccinos enjoyed in cafés worldwide, coffee brings people together, inspires creativity, and adds warmth to everyday . I hope you enjoy for what we have for you  
+
+            </p>
+
+         <div class="pt-3 buttons-row">
+
+  <button class="btn btn-section11">
+
+    <i class="fas fa-microphone pe-1"></i>Podcast
+
+  </button> <!-- btn btn-section11 -->
+
+  <button class="btn btn-section11">
+
+    <i class="far fa-clock pe-1"></i>43 mins
+
+  </button> <!-- btn btn-section11 -->
+
+  <button class="btn btn-section11">
+
+    <i class="fas fa-play pe-1"></i>Play Episode
+
+  </button> <!-- btn btn-section11 -->
+
+        </div> <!-- pt-3 mb-0 buttons-row -->
+
+        </div>  <!-- card-body ms-2 -->
+
+      </div> <!-- col-12 col-md-7 -->
+
+    </div> <!-- row g-0 flex-column flex-md-row -->
+
+  </div> <!-- card -->
+
+
+
+
+
+
+
+
+
+  <div class="card mt-5">
+
+  <div class="row g-0 flex-column flex-md-row">
+
+
+      <div class="col-12 col-md-5 order-md-last">
+
+        <div class="trapezoid-img">
+
+          <img src="images/pic60.png" alt="Pizza" class="we">
+
+        </div> <!-- trapezoid-img -->
+
+      </div> <!-- col-12 col-md-5 order-md-last -->
+
+      <!-- النص -->
+
+      <div class="col-12 col-md-7">
+
+        <div class="card-body ms-2">
+
+          <h5 class="card-title fst-italic fs-2">Podcast Title</h5>
+
+          <p class="card-m-0" style="color: #3E2723;">Mon, May 25th 2020</p>
+
+          <div class="progress ms-2 my-2">
+
+            <div class="progress-bar bg-warning animate-bar">
+
+            </div> <!-- animate-bar -->
+
+          </div> <!-- progress ms-2 my-2 -->
+
+          <p class="card-text">
+
+           our Coffee is more than just a beverage; it is a daily ritual for millions of people around the world. Its rich aroma and bold flavor awaken the senses and provide a moment of comfort and focus. From the delicate espresso shots of Italy to the creamy cappuccinos enjoyed in cafés worldwide, coffee brings people together, inspires creativity, and adds warmth to everyday. 
+
+            </p>
+
+         <div class=" pt-3 buttons-row">
+
+  <button class="btn btn-section11">
+
+    <i class="fas fa-microphone pe-1"></i>Podcast
+
+  </button> <!-- btn btn-section11 -->
+
+  <button class="btn btn-section11">
+
+    <i class="far fa-clock pe-1"></i>43 mins
+
+  </button> <!-- btn btn-section11 -->
+
+  <button class="btn btn-section11">
+
+    <i class="fas fa-play pe-1"></i>Play Episode
+
+  </button> <!-- btn btn-section11 -->
+
+        </div> <!-- pt-3 mb-0 buttons-row -->
+
+        </div>  <!-- card-body ms-2 -->
+
+      </div> <!-- col-12 col-md-7 -->
+
+    </div> <!-- row g-0 flex-column flex-md-row -->
+
+  </div> <!-- card -->
+
+
+
+
+
+
+
+
+ <div class="card mt-5">
+
+  <div class="row g-0 flex-column flex-md-row">
+
+
+      <div class="col-12 col-md-5">
+
+        <div class="trapezoid-img rect">
+
+          <img src="images/pic31.png" alt="Pizza" class="we">
+
+        </div> <!-- trapezoid-img -->
+
+      </div> <!-- col-12 col-md-5 order-md-last -->
+
+      <!-- النص -->
+
+      <div class="col-12 col-md-7">
+
+        <div class="card-body boo">
+
+          <h5 class="card-title fst-italic fs-2">Podcast Title</h5>
+
+          <p class="card-m-0" style="color: #3E2723;">Mon, May 25th 2020</p>
+
+          <div class="progress ms- my-2">
+
+            <div class="progress-bar bg-warning animate-bar">
+
+            </div> <!-- animate-bar -->
+
+          </div> <!-- progress ms-2 my-2 -->
+
+          <p class="card-text">
+
+           our Coffee is more than just a beverage; it is a daily ritual for millions of people around the world. Its rich aroma and bold flavor awaken the senses and provide a moment of comfort and focus. From the delicate espresso shots of Italy to the creamy cappuccinos enjoyed in cafés worldwide, coffee brings people together, inspires creativity, and adds warmth to everyday . I hope you enjoy for what we have for you  
+
+            </p>
+
+         <div class="pt-3 buttons-row">
+
+  <button class="btn btn-section11">
+
+    <i class="fas fa-microphone pe-1"></i>Podcast
+
+  </button> <!-- btn btn-section11 -->
+
+  <button class="btn btn-section11">
+
+    <i class="far fa-clock pe-1"></i>43 mins
+
+  </button> <!-- btn btn-section11 -->
+
+  <button class="btn btn-section11">
+
+    <i class="fas fa-play pe-1"></i>Play Episode
+
+  </button> <!-- btn btn-section11 -->
+
+        </div> <!-- pt-3 mb-0 buttons-row -->
+
+        </div>  <!-- card-body ms-2 -->
+
+      </div> <!-- col-12 col-md-7 -->
+
+    </div> <!-- row g-0 flex-column flex-md-row -->
+
+  </div> <!-- card -->
+
+</div> <!--  container-->
+
+
+</section> <!--**********************************************************************************section-11********************************************************** -->
+
+<section class="section-11">
+
+  <div class="container text-center py-5">
+
+    <div class="row g-4 justify-content-center mt-2">
+
+      <!-- أيقونة 1 -->
+      <div class="col-8 col-md-3">
+
+        <div class="icon-box bg-icons">
+
+          <div class="text-bg-top">Subscribe Now</div>
+
+          <img width="94" height="94" src="https://img.icons8.com/3d-fluency/94/whatsapp.png" alt="whatsapp" class="my-3"/>
+
+          <div class="text-bg-bottom text-center">
+
+            <a href="#" class="links">go to link</a>
+
+          </div> <!-- text-bg-bottom text-center -->
+
+        </div> <!-- icon-box bg-icons -->
+
+      </div> <!-- col-8 col-md-3 -->
+
+      <!-- أيقونة 2 -->
+      <div class="col-8 col-md-3">
+
+        <div class="icon-box bg-icons">
+
+          <div class="text-bg-top">Subscribe Now</div>
+
+          <img width="94" height="94" src="https://img.icons8.com/3d-fluency/94/facebook-logo.png" alt="facebook" class="my-3"/>
+
+          <div class="text-bg-bottom text-center">
+
+            <a href="#" class="links">go to link</a>
+
+          </div> <!-- text-bg-bottom text-center -->
+
+        </div> <!-- icon-box bg-icons -->
+
+      </div> <!-- col-8 col-md-3 -->
+
+      <!-- أيقونة 3 -->
+      <div class="col-8 col-md-3">
+
+        <div class="icon-box bg-icons">
+
+          <div class="text-bg-top">Subscribe Now</div>
+
+          <img width="94" height="94" src="https://img.icons8.com/3d-fluency/94/linkedin--v1.png" alt="twitter" class="my-3"/>
+
+          <div class="text-bg-bottom text-center">
+
+            <a href="#" class="links">go to link</a>
+
+          </div>  <!-- text-bg-bottom text-center -->
+
+        </div>  <!-- icon-box bg-icons -->
+
+      </div>  <!-- col-8 col-md-3 -->
+
+      <!-- أيقونة 4 -->
+      <div class="col-8 col-md-3">
+
+        <div class="icon-box bg-icons">
+
+          <div class="text-bg-top">Subscribe Now</div>
+
+          <img width="94" height="94" src="https://img.icons8.com/3d-fluency/94/instagram-new.png" alt="instagram" class="my-3"/>
+
+          <div class="text-bg-bottom text-center">
+
+            <a href="#" class="links">go to link</a>
+
+          </div> <!-- text-bg-bottom text-center -->
+
+        </div>  <!-- icon-box bg-icons -->
+
+      </div> <!-- col-8 col-md-3 -->
+
+    </div><!-- row -->
+
+  </div><!-- container -->
+
+</section> <!--**********************************************************************************section-11********************************************************** -->
+
+
+
+
+<footer>
+
+<div class="bg honey rounded-1 pt-5">
+
+<hr class="border-top border-light m-0 w-95">
+
+<div class="container py-3">
+
+  <div class="row justify-content-center">
+
+    <!-- كتلة 1 -->
+    <div class="col-12 col-md-4 d-flex flex-column flex-md-column align-items-center footer-block">
+
+      <img src="Images/logo3.png" class="rounded-circle mb-2 img-fluid" style="max-width:60px;">
+
+      <p class="mb-1 fst-italic fw-bold text-center text-md-start color-p">Good Company</p>
+      
+         <hr class="d-none d-md-block border-top border-light mt-1 mb-2" style="width:800px">
+
+      <p class="mb-0 text-center text-md-start color-p pt-2 ">Tel: 000-000-000</p>
+
+      <p class="mb-0 text-center text-md-start color-p pt-2">Address: EGYPT</p>
+
+      <p class="mb-0 text-center text-md-start color-p pt-2">Fax: 000.000.000</p>
+    
+
+    </div> <!-- col-12 col-md-4 d-flex flex-column -->
+
+   <hr class="border-top border-light  d-lg-none d-md-none mt-3">
+
+    <!-- كتلة 2 -->
+    <div class="col-12 col-md-4 d-flex flex-column flex-md-column align-items-center footer-block">
+
+      <img src="Images/logo3.png" class="rounded-circle mb-2 img-fluid" style="max-width:60px;">
+
+      <p class="mb-1 fst-italic fw-bold text-center text-md-start color-p">Important Links</p> 
+
+ <hr class="d-none d-md-block border-top border-light mt-1 mb-2" style="width:800px">
+        
+      <p class="mb-0 text-center text-md-start color-p pt-2">Visit Us</p>
+
+      <p class="mb-0 text-center text-md-start color-p pt-2">Take A Look</p>
+
+      <p class="mb-0 text-center text-md-start color-p pt-2">Your Health Is More Important</p>
+
+    </div> <!-- col-12 col-md-4 d-flex flex-column -->
+    
+    <hr class="border-top border-light  d-lg-none d-md-none mt-3">
+
+    <!-- كتلة 3 -->
+
+    <div class="col-12 col-md-4 d-flex flex-column flex-md-column align-items-center footer-block">
+
+
+      <img src="Images/logo3.png" class="rounded-circle mb-2 img-fluid" style="max-width:60px;">
+
+
+      <p class="mb-1 fst-italic fw-bold text-center text-md-start color-p">Visions</p>
+
+<hr class="d-none d-md-block border-top border-light mt-1 mb-2 ps-3" style="width:800px">
+         
+      <p class="mb-0 text-center text-md-start color-p  pt-2">Services For All</p>
+
+      <p class="mb-0 text-center text-md-start color-p pt-2 ">Provide Best Services</p>
+
+      <p class="mb-0 text-center text-md-start color-p pt-2 ">You Will Be Better Than Before</p>
+
+      
+    </div> <!-- col-12 col-md-4 d-flex flex-column -->
+
+
+ 
+
+<div class="bg bg-ag py-2 mt-5">
+
+  <div class="container text-center">
+
+    <p class="mb-1 fst-italic">&copy; 2025 Coffe Shop. All Rights Reserved.</p>
+
+    <p class="mb-0 fst-italic">Coffee is more than just a drink – it’s a moment of warmth, energy, and inspiration that starts your day right.</p>
+ 
+</div> <!-- bg bg-ag py-2 mt-5 -->
+
+</div> <!-- container text-center -->
+
+</div> <!-- row justify-content-center -->
+
+</div> <!-- container py-3 -->
+
+</div> <!-- bg honey rounded-1 pt-5 -->
+
+ <!--**********************************************************************************footer-12********************************************************** -->
+
+
+<script src="JavaScript-bootstrap/bootstrap.bundle.min.js"></script>
+</body>
+</html>
